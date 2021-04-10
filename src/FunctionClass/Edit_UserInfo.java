@@ -37,7 +37,7 @@ public class Edit_UserInfo {
     } 
 
     public String getStudentID() {return studentID;}
-    
+
     public String getStudentName() {return studentName;} 
 
     public String getStudentBirthday() {return studentBirthday;}

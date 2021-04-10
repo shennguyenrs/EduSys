@@ -1,4 +1,4 @@
-package src;
+package src.FlowClass;
 
 import java.io.*;
 import java.util.Scanner;
