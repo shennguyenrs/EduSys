@@ -1,15 +1,19 @@
-package src.FlowClass;
+package EduSys.com;
 
 import java.io.*;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Welcome
 {
-   private static final String filename = "src/banner.txt";
+   private static final String filename = "src/main/resources/banner.txt";
+   private String option;
+   private String[] optionArr = {"1", "2", "3", "0"};
 
-   public void main() throws Exception
+   public void welcome() throws Exception
    {
        File file = new File(filename).getAbsoluteFile();
+       Scanner input = new Scanner(System.in);
 
        BufferedReader in = new BufferedReader(new FileReader(file));
        String line;
@@ -34,31 +38,27 @@ public class Welcome
        System.out.println("0 - Exit");
        System.out.println("-----------------------------");
 
-       Scanner input = new Scanner(System.in);
        System.out.println("Enter your choose:");
-       String option;
 
        while((option = input.nextLine()) != null)
        {
-           try 
-           {
-               int choose = Integer.valueOf(option);
+           // Input Option validation
+           Boolean check = Arrays.asList(optionArr).contains(option);
 
-                if(choose == 1 || choose == 2 || choose == 3 || choose == 0)
-                {
-                    System.exit(0); // Exit without errors
-                }
-                else 
-                {
-                    System.out.println("Your enter the wrong choose! Please try again!");
-                }
-           }
-           catch (Exception e)
-           {
-               System.exit(1); // Exit when occurs errors
+           // Give message on invalid input
+           // or break the loop on correct input
+           if(!check) {
+               System.out.println("Your choose is invalid! Please choose again!");
+           } else {
+               break;
            }
        }
-
+       
+       // Close input
        input.close();
    } 
+
+   public String getOption() {
+       return option;
+   }
 }

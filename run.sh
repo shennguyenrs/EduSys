@@ -4,5 +4,5 @@
 ctags --recurse=yes -h .java
 
 # Run application
-javac ./App.java
-java App
+javac -cp ./bin/ ./App.java
+java bin.App

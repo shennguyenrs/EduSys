@@ -1,4 +1,5 @@
-package src.FunctionClass;
+package EduSys.com;
+
 import java.io.*;
 import java.util.Scanner;
 
