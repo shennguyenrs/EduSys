@@ -6,14 +6,14 @@ import java.util.Scanner;
 
 public class Welcome
 {
-   private static final String filename = "src/main/resources/banner.txt";
+   private static final String filename = "resources/banner.txt";
    private String option;
    private String[] optionArr = {"1", "2", "3", "0"};
+   public static Scanner input = new Scanner(System.in);
 
    public void welcome() throws Exception
    {
        File file = new File(filename).getAbsoluteFile();
-       Scanner input = new Scanner(System.in);
 
        BufferedReader in = new BufferedReader(new FileReader(file));
        String line;
@@ -21,6 +21,7 @@ public class Welcome
        System.out.println("========================================================");
        System.out.println();
 
+       // Display banner
        while((line = in.readLine()) != null)
        {
            System.out.println(line);
@@ -53,9 +54,6 @@ public class Welcome
                break;
            }
        }
-       
-       // Close input
-       input.close();
    } 
 
    public String getOption() {

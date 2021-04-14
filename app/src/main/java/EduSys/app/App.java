@@ -11,10 +11,10 @@ public class App {
             welcomeScreen.welcome();
             String choose = welcomeScreen.getOption();
 
-            //if(choose.equals("1")) {
-                //Login newLogin = new Login();
-                //newLogin.loginScreen();
-            //}
+            if(choose.equals("1")) {
+                Login newLogin = new Login();
+                newLogin.loginScreen();
+            }
 
             if(choose.equals("0")) {
                 System.out.println("Good Bye");

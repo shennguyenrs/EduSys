@@ -21,8 +21,6 @@ public class Login {
         // Set username and password
         setUsername(newUser);
         setPassword(newPass);
-
-        input.close();
     }
 
     public String getUsername() {
