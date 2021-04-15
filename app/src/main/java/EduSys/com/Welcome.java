@@ -4,16 +4,19 @@ import java.io.*;
 import java.util.Arrays;
 import java.util.Scanner;
 
+import EduSys.utils.*;
+
 public class Welcome
 {
-   private static final String filename = "resources/banner.txt";
+   private static final String filename = "txt/banner.txt";
    private String option;
    private String[] optionArr = {"1", "2", "3", "0"};
    public static Scanner input = new Scanner(System.in);
 
    public void welcome() throws Exception
    {
-       File file = new File(filename).getAbsoluteFile();
+       ReadResource resource = new ReadResource();
+       File file = resource.getFile(filename);
 
        BufferedReader in = new BufferedReader(new FileReader(file));
        String line;

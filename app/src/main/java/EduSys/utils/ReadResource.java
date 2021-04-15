@@ -1,21 +1,13 @@
 package EduSys.utils;
 
 import java.io.*;
-import java.net.URI;
-import java.net.URL;
-import java.net.URISyntaxException;
 
 public class ReadResource {
 
-    private InputStream getFileAsStream(String filename) {
+    public File getFile(String filename) throws IOException {
         ClassLoader classLoader = getClass().getClassLoader();
-        InputStream inputStream = classLoader.getSystemResourceAsStream(filename);
+        File file = new File(classLoader.getResource(filename).getFile());
 
-        if (inputStream == null)
-        {
-            throw new IllegalArgumentException("File is not found! "+filename);
-        } else {
-            return inputStream;
-        }
+        return file;
     }
 }
