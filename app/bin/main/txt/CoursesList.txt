@@ -1,0 +1,8 @@
+0CC5121   Chemistry             04/04/2021   04/05/2021   07/05/2021   28/06/2021   Acids and Bases       Mrs. Nia
+0CM3121   Maths                 04/02/2021   04/03/2021   08/03/2021   28/05/2021   Matrix 1              Ms. Mia
+0CB2121   Business              04/01/2021   04/02/2021   08/02/2021   28/03/2021   Marketing             Mr. Martin
+0CE2121   Entrepreneurship      06/04/2021   05/05/2021   08/05/2021   26/06/2021   Business plan         Mr. Martin
+0CF4121   Finnish               04/03/2021   04/04/2021   09/04/2021   27/06/2021   Grammar               Mrs.Hanna
+0CM4221   Maths 2               04/04/2021   04/05/2021   08/05/2021   28/06/2021   Matrix 2              Ms. Mia
+0CC5221   Chemistry 2           04/04/2021   04/05/2021   07/05/2021   28/06/2021   Phenomenon reaction   Mrs. Nia
+0CS5121   System Engineering    05/04/2021   03/05/2021   06/05/2021   23/06/2021   Agile                 Mr. Alex
