@@ -1,4 +1,4 @@
-package EduSys.com;
+package app.src.main.java.EduSys.com;
 
 import java.io.*;
 import java.util.Scanner;
@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class UserInfo
 {
     //Add the data of user example
-    private static final String fileName = "src/FunctionClass/UserInfo_test.txt";
+    private static final String fileName = "src/main/resources/txt/UserInfo_test.txt";
 
     public static void PrintUserInfo() throws Exception{
             //Pass the path of the data to read
