@@ -4,20 +4,16 @@ tags:
 	@echo "Done"
 
 dev:
-	if command -v gradle run @> /dev/null; then \
-		gradle run; \
-	else \
-		./gradlew run; \
-	fi
+	@echo "Build and run developement application..."
+	@if command -v gradle run @> /dev/null; then gradle run; else ./gradlew run; fi
 
 build:
-	if command -v gradle build @> /dev/null; then \
-		gradle build; \
-	else \
-		./gradlew build; \
-	fi
-	chmod +x ./app/build/libs/app.jar
+	@echo "Build application..."
+	@if command -v gradle build @> /dev/null; then gradle build; else ./gradlew build; fi
+	@echo "Set excuatable to JAR file..."
+	@chmod +x ./app/build/libs/app.jar
+	@echo "Done"
 
 run:
-	java -jar ./app/build/libs/app.jar
-
+	@echo "Running build file..."
+	@java -jar ./app/build/libs/app.jar

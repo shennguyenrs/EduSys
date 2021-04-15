@@ -39,3 +39,19 @@ jar {
         attributes 'Main-Class': 'EduSys.app.App'
     }
 }
+
+/*
+ * Tasks
+ */
+
+task printSourceSetInformation() {
+    doLast {
+        sourceSets.each{ srcSet ->
+            println "["+srcSet.name+"]"
+            print "-->Source directories: "+srcSet.allJava.srcDirs+"\n"
+            print "-->Output directories: "+srcSet.output.classesDirs.files+"\n"
+            print "-->Resources directories: "+srcSet.output.resourcesDir+"\n"
+            println ""
+        }
+    }
+}
