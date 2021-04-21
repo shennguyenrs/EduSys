@@ -1,7 +1,9 @@
-tags:
+ctags:
+	@echo "--> Delete old tags file..."
+	rm ./tags
 	@echo "--> Updating tags file..."
 	ctags --recurse=yes -h .java
-	@echo -e "\xE2\x9C\x94 Done"
+	@echo "-> Done"
 
 dev:
 	@echo "--> Build and run developement application..."
@@ -12,7 +14,7 @@ build:
 	@if command -v gradle build @> /dev/null; then gradle build; else ./gradlew build; fi
 	@echo "--> Set excuatable to JAR file..."
 	@chmod +x ./app/build/libs/app.jar
-	@echo -e "\xE2\x9C\x94 Done"
+	@echo "--> Done"
 
 run:
 	@echo "--> Running build file..."

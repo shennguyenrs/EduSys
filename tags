@@ -4,47 +4,200 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+-recurse	Makefile	/^	ctags --recurse=yes -h .java$/;"	m
+APP_BASE_NAME	app/build/scripts/app.bat	/^set APP_BASE_NAME=%~n0$/;"	v
 APP_BASE_NAME	gradlew.bat	/^set APP_BASE_NAME=%~n0$/;"	v
+APP_HOME	app/build/scripts/app.bat	/^for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi$/;"	v
+APP_HOME	app/build/scripts/app.bat	/^set APP_HOME=%DIRNAME%..$/;"	v
 APP_HOME	gradlew.bat	/^for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi$/;"	v
 APP_HOME	gradlew.bat	/^set APP_HOME=%DIRNAME%$/;"	v
 App	app/src/main/java/EduSys/app/App.java	/^public class App {$/;"	c
+Authenticate	app/src/main/java/EduSys/com/Authenticate.java	/^public class Authenticate {$/;"	c
+CLASSPATH	app/build/scripts/app.bat	/^set CLASSPATH=%APP_HOME%\\lib\\app.jar;%APP_HOME%\\lib\\guava-30.0-jre.jar;%APP_HOME%\\lib\\failureaccess-1.0.1.jar;%APP_HOME%\\lib\\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;%APP_HOME%\\lib\\jsr305-3.0.2.jar;%APP_HOME%\\lib\\checker-qual-3.5.0.jar;%APP_HOME%\\lib\\error_prone_annotations-2.3.4.jar;%APP_HOME%\\lib\\j2objc-annotations-1.3.jar$/;"	v
 CLASSPATH	gradlew.bat	/^set CLASSPATH=%APP_HOME%\\gradle\\wrapper\\gradle-wrapper.jar$/;"	v
+CancelCourse	app/src/main/java/EduSys/com/CancelCourse.java	/^public class CancelCourse {$/;"	c
+CourseInfo	app/src/main/java/EduSys/com/CourseInfo.java	/^  public CourseInfo($/;"	m	class:CourseInfo
+CourseInfo	app/src/main/java/EduSys/com/CourseInfo.java	/^public class CourseInfo {$/;"	c
+DEFAULT_JVM_OPTS	app/build/scripts/app.bat	/^set DEFAULT_JVM_OPTS=$/;"	v
 DEFAULT_JVM_OPTS	gradlew.bat	/^set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"$/;"	v
+DIRNAME	app/build/scripts/app.bat	/^if "%DIRNAME%" == "" set DIRNAME=.$/;"	v
+DIRNAME	app/build/scripts/app.bat	/^set DIRNAME=%~dp0$/;"	v
 DIRNAME	gradlew.bat	/^if "%DIRNAME%" == "" set DIRNAME=.$/;"	v
 DIRNAME	gradlew.bat	/^set DIRNAME=%~dp0$/;"	v
+EditUser	app/src/main/java/EduSys/com/EditUser.java	/^public class EditUser {$/;"	c
 EduSys.app	app/src/main/java/EduSys/app/App.java	/^package EduSys.app;$/;"	p
+EduSys.com	app/src/main/java/EduSys/com/Authenticate.java	/^package EduSys.com;$/;"	p
+EduSys.com	app/src/main/java/EduSys/com/CancelCourse.java	/^package EduSys.com;$/;"	p
+EduSys.com	app/src/main/java/EduSys/com/CourseInfo.java	/^package EduSys.com;$/;"	p
+EduSys.com	app/src/main/java/EduSys/com/EditUser.java	/^package EduSys.com;$/;"	p
+EduSys.com	app/src/main/java/EduSys/com/EnrolCourse.java	/^package EduSys.com;$/;"	p
 EduSys.com	app/src/main/java/EduSys/com/Login.java	/^package EduSys.com;$/;"	p
+EduSys.com	app/src/main/java/EduSys/com/ShowAvailableCourses.java	/^package EduSys.com;$/;"	p
+EduSys.com	app/src/main/java/EduSys/com/ShowEnrolledCourses.java	/^package EduSys.com;$/;"	p
+EduSys.com	app/src/main/java/EduSys/com/StudentInfo.java	/^package EduSys.com;$/;"	p
 EduSys.com	app/src/main/java/EduSys/com/UserInfo.java	/^package EduSys.com;$/;"	p
+EduSys.com	app/src/main/java/EduSys/com/UserScreen.java	/^package EduSys.com;$/;"	p
 EduSys.com	app/src/main/java/EduSys/com/Welcome.java	/^package EduSys.com;$/;"	p
+EduSys.utils	app/src/main/java/EduSys/utils/ReadResource.java	/^package EduSys.utils;$/;"	p
+EnrolCourse	app/src/main/java/EduSys/com/EnrolCourse.java	/^public class EnrolCourse {$/;"	c
+FindCourse	app/src/main/java/EduSys/com/FindCourse.java	/^public class FindCourse {$/;"	c
+JAVA_EXE	app/build/scripts/app.bat	/^set JAVA_EXE=%JAVA_HOME%\/bin\/java.exe$/;"	v
+JAVA_EXE	app/build/scripts/app.bat	/^set JAVA_EXE=java.exe$/;"	v
 JAVA_EXE	gradlew.bat	/^set JAVA_EXE=%JAVA_HOME%\/bin\/java.exe$/;"	v
 JAVA_EXE	gradlew.bat	/^set JAVA_EXE=java.exe$/;"	v
+JAVA_HOME	app/build/scripts/app.bat	/^set JAVA_HOME=%JAVA_HOME:"=%$/;"	v
 JAVA_HOME	gradlew.bat	/^set JAVA_HOME=%JAVA_HOME:"=%$/;"	v
 Login	app/src/main/java/EduSys/com/Login.java	/^public class Login {$/;"	c
-PrintUserInfo	app/src/main/java/EduSys/com/UserInfo.java	/^    public static void PrintUserInfo() throws Exception{$/;"	m	class:UserInfo
-UserInfo	app/src/main/java/EduSys/com/UserInfo.java	/^public class UserInfo$/;"	c
+PrintUserInfo	app/src/main/java/EduSys/com/UserInfo.java	/^    public void PrintUserInfo() throws Exception {$/;"	m	class:UserInfo
+ReadResource	app/src/main/java/EduSys/utils/ReadResource.java	/^public class ReadResource {$/;"	c
+ShowAvailableCourses	app/src/main/java/EduSys/com/ShowAvailableCourses.java	/^public class ShowAvailableCourses {$/;"	c
+ShowCourseInfo	app/src/main/java/EduSys/com/ShowCourseInfo.java	/^    public void ShowCourseInfo(String compareId) throws Exception{$/;"	m	class:ShowCourseInfo
+ShowCourseInfo	app/src/main/java/EduSys/com/ShowCourseInfo.java	/^public class ShowCourseInfo {$/;"	c
+ShowEnrolledCourses	app/src/main/java/EduSys/com/ShowEnrolledCourses.java	/^public class ShowEnrolledCourses {$/;"	c
+StudentInfo	app/src/main/java/EduSys/com/StudentInfo.java	/^    public StudentInfo(int id, String name, String birthday, String pass) {$/;"	m	class:StudentInfo
+StudentInfo	app/src/main/java/EduSys/com/StudentInfo.java	/^public class StudentInfo {$/;"	c
+Test_CancelCourse	app/src/test/java/EduSys/com/Test_CancelCourse.java	/^public class Test_CancelCourse {$/;"	c
+Test_Edit_UserInfo	app/src/test/java/EduSys/com/Test_Edit_UserInfo.java	/^public class Test_Edit_UserInfo {$/;"	c
+Test_EnrolCourse	app/src/test/java/EduSys/com/Test_EnrolCourse.java	/^public class Test_EnrolCourse {$/;"	c
+Test_FindCourse	app/src/test/java/EduSys/com/Test_FindCourse.java	/^public class Test_FindCourse {$/;"	c
+Test_ShowAvailableCourses	app/src/test/java/EduSys/com/Test_ShowAvailableCourses.java	/^public class Test_ShowAvailableCourses {$/;"	c
+Test_ShowCourseInfo	app/src/test/java/EduSys/com/Test_ShowCourseInfo.java	/^public class Test_ShowCourseInfo {$/;"	c
+Test_ShowEnrolledCourses	app/src/test/java/EduSys/com/Test_ShowEnrolledCourses.java	/^public class Test_ShowEnrolledCourses {$/;"	c
+Test_User_Info	app/src/test/java/EduSys/com/Test_User_Info.java	/^public class Test_User_Info {$/;"	c
+UserInfo	app/src/main/java/EduSys/com/UserInfo.java	/^public class UserInfo {$/;"	c
+UserScreen	app/src/main/java/EduSys/com/UserScreen.java	/^public class UserScreen {$/;"	c
 Welcome	app/src/main/java/EduSys/com/Welcome.java	/^public class Welcome$/;"	c
+app.src.main.java.EduSys.com	app/src/main/java/EduSys/com/FindCourse.java	/^package app.src.main.java.EduSys.com;$/;"	p
+app.src.main.java.EduSys.com	app/src/main/java/EduSys/com/ShowCourseInfo.java	/^package app.src.main.java.EduSys.com;$/;"	p
+app.src.test.java.EduSys.app	app/src/test/java/EduSys/com/Test_CancelCourse.java	/^package app.src.test.java.EduSys.app;$/;"	p
+app.src.test.java.EduSys.app	app/src/test/java/EduSys/com/Test_Edit_UserInfo.java	/^package app.src.test.java.EduSys.app;$/;"	p
+app.src.test.java.EduSys.app	app/src/test/java/EduSys/com/Test_EnrolCourse.java	/^package app.src.test.java.EduSys.app;$/;"	p
+app.src.test.java.EduSys.app	app/src/test/java/EduSys/com/Test_FindCourse.java	/^package app.src.test.java.EduSys.app;$/;"	p
+app.src.test.java.EduSys.app	app/src/test/java/EduSys/com/Test_ShowAvailableCourses.java	/^package app.src.test.java.EduSys.app;$/;"	p
+app.src.test.java.EduSys.app	app/src/test/java/EduSys/com/Test_ShowCourseInfo.java	/^package app.src.test.java.EduSys.app;$/;"	p
+app.src.test.java.EduSys.app	app/src/test/java/EduSys/com/Test_ShowEnrolledCourses.java	/^package app.src.test.java.EduSys.app;$/;"	p
+app.src.test.java.EduSys.app	app/src/test/java/EduSys/com/Test_User_Info.java	/^package app.src.test.java.EduSys.app;$/;"	p
+birthday	app/src/main/java/EduSys/com/StudentInfo.java	/^    private String birthday;$/;"	f	class:StudentInfo
+cancelCourse	app/src/main/java/EduSys/com/CancelCourse.java	/^  public void cancelCourse(String compareId) throws Exception {$/;"	m	class:CancelCourse
+check	app/src/main/java/EduSys/com/CancelCourse.java	/^  private boolean check;$/;"	f	class:CancelCourse
+check	app/src/main/java/EduSys/com/EnrolCourse.java	/^    private boolean check;$/;"	f	class:EnrolCourse
+check	app/src/main/java/EduSys/com/FindCourse.java	/^    private boolean check;$/;"	f	class:FindCourse
+check	app/src/main/java/EduSys/com/ShowCourseInfo.java	/^    private boolean check;$/;"	f	class:ShowCourseInfo
+checkAvailableCourses	app/src/main/java/EduSys/com/ShowAvailableCourses.java	/^    public boolean checkAvailableCourses(Date dateCompare, Date dateCompare2) {$/;"	m	class:ShowAvailableCourses
+checkEnrolledCourses	app/src/main/java/EduSys/com/CancelCourse.java	/^  public void checkEnrolledCourses(String compareId) throws Exception {$/;"	m	class:CancelCourse
+checkEnrolledCourses	app/src/main/java/EduSys/com/EnrolCourse.java	/^    public void checkEnrolledCourses(String compareId) throws Exception {$/;"	m	class:EnrolCourse
+checkId	app/src/main/java/EduSys/com/ShowEnrolledCourses.java	/^    public boolean checkId(String compareId) throws Exception {$/;"	m	class:ShowEnrolledCourses
+constantID	app/src/main/java/EduSys/com/EditUser.java	/^    private String constantID;$/;"	f	class:EditUser
+courseId	app/src/main/java/EduSys/com/CourseInfo.java	/^  private int courseId;$/;"	f	class:CourseInfo
+deleteEnrolledCourse	app/src/main/java/EduSys/com/CancelCourse.java	/^  public void deleteEnrolledCourse(String oldCourseId) throws Exception {$/;"	m	class:CancelCourse
+description	app/src/main/java/EduSys/com/CourseInfo.java	/^  private String description;$/;"	f	class:CourseInfo
+die	app/build/scripts/app	/^die () {$/;"	f
 die	gradlew	/^die () {$/;"	f
+end	app/build/scripts/app.bat	/^:end$/;"	l
 end	gradlew.bat	/^:end$/;"	l
+endAfter	app/src/main/java/EduSys/com/CourseInfo.java	/^  private String endAfter;$/;"	f	class:CourseInfo
+enrolBegin	app/src/main/java/EduSys/com/CourseInfo.java	/^  private String enrolBegin;$/;"	f	class:CourseInfo
+enrolCourse	app/src/main/java/EduSys/com/EnrolCourse.java	/^    public void enrolCourse(String compareId) throws Exception {$/;"	m	class:EnrolCourse
+enrolEnd	app/src/main/java/EduSys/com/CourseInfo.java	/^  private String enrolEnd;$/;"	f	class:CourseInfo
+execute	app/build/scripts/app.bat	/^:execute$/;"	l
 execute	gradlew.bat	/^:execute$/;"	l
+fail	app/build/scripts/app.bat	/^:fail$/;"	l
 fail	gradlew.bat	/^:fail$/;"	l
-fileName	app/src/main/java/EduSys/com/UserInfo.java	/^    private static final String fileName = "src\/FunctionClass\/UserInfo_test.txt";$/;"	f	class:UserInfo
-filename	app/src/main/java/EduSys/com/Welcome.java	/^   private static final String filename = "src\/main\/resources\/banner.txt";$/;"	f	class:Welcome
+fileName	app/src/main/java/EduSys/com/CancelCourse.java	/^  private static final String fileName = "txt\/EnrolledCoursesList.txt";$/;"	f	class:CancelCourse
+fileName	app/src/main/java/EduSys/com/EditUser.java	/^    private static final String fileName = "txt\/UserInfo_test.txt";$/;"	f	class:EditUser
+fileName	app/src/main/java/EduSys/com/EnrolCourse.java	/^    private static final String fileName = "txt\/EnrolledCoursesList.txt";$/;"	f	class:EnrolCourse
+fileName	app/src/main/java/EduSys/com/FindCourse.java	/^    private static final String fileName = "src\/main\/resources\/txt\/CoursesList.txt";$/;"	f	class:FindCourse
+fileName	app/src/main/java/EduSys/com/ShowAvailableCourses.java	/^    private static final String fileName = "txt\/CoursesList.txt";$/;"	f	class:ShowAvailableCourses
+fileName	app/src/main/java/EduSys/com/ShowCourseInfo.java	/^    private static final String fileName = "src\/main\/resources\/txt\/CoursesList.txt";$/;"	f	class:ShowCourseInfo
+fileName	app/src/main/java/EduSys/com/ShowEnrolledCourses.java	/^    private static final String fileName = "txt\/EnrolledCoursesList.txt";$/;"	f	class:ShowEnrolledCourses
+fileName	app/src/main/java/EduSys/com/UserInfo.java	/^    private static final String fileName = "txt\/UserInfo_test.txt";$/;"	f	class:UserInfo
+fileName2	app/src/main/java/EduSys/com/CancelCourse.java	/^  private static final String fileName2 = "txt\/CoursesList.txt";$/;"	f	class:CancelCourse
+fileName2	app/src/main/java/EduSys/com/EnrolCourse.java	/^    private static final String fileName2 = "txt\/CoursesList.txt";$/;"	f	class:EnrolCourse
+fileName2	app/src/main/java/EduSys/com/ShowEnrolledCourses.java	/^    private static final String fileName2 = "txt\/UserInfo_test.txt";$/;"	f	class:ShowEnrolledCourses
+filename	app/src/main/java/EduSys/com/Welcome.java	/^   private static final String filename = "txt\/banner.txt";$/;"	f	class:Welcome
+findCourse	app/src/main/java/EduSys/com/FindCourse.java	/^    public void findCourse(String compareId) throws Exception{$/;"	m	class:FindCourse
+findJavaFromJavaHome	app/build/scripts/app.bat	/^:findJavaFromJavaHome$/;"	l
 findJavaFromJavaHome	gradlew.bat	/^:findJavaFromJavaHome$/;"	l
+getBirthday	app/src/main/java/EduSys/com/StudentInfo.java	/^    public String getBirthday() { return birthday; }$/;"	m	class:StudentInfo
+getDescription	app/src/main/java/EduSys/com/CourseInfo.java	/^  public String getDescription() {$/;"	m	class:CourseInfo
+getEndAfter	app/src/main/java/EduSys/com/CourseInfo.java	/^  public String getEndAfter() {$/;"	m	class:CourseInfo
+getEnrolBegin	app/src/main/java/EduSys/com/CourseInfo.java	/^  public String getEnrolBegin() {$/;"	m	class:CourseInfo
+getEnrolEnd	app/src/main/java/EduSys/com/CourseInfo.java	/^  public String getEnrolEnd() {$/;"	m	class:CourseInfo
+getFile	app/src/main/java/EduSys/utils/ReadResource.java	/^  public File getFile(String filename) throws IOException {$/;"	m	class:ReadResource
+getId	app/src/main/java/EduSys/com/CourseInfo.java	/^  public int getId() {$/;"	m	class:CourseInfo
+getId	app/src/main/java/EduSys/com/StudentInfo.java	/^    public int getId() { return studentId; }$/;"	m	class:StudentInfo
+getLecturer	app/src/main/java/EduSys/com/CourseInfo.java	/^  public String getLecturer() {$/;"	m	class:CourseInfo
+getName	app/src/main/java/EduSys/com/CourseInfo.java	/^  public String getName() {$/;"	m	class:CourseInfo
+getName	app/src/main/java/EduSys/com/StudentInfo.java	/^    public String getName() { return name; }$/;"	m	class:StudentInfo
 getOption	app/src/main/java/EduSys/com/Welcome.java	/^   public String getOption() {$/;"	m	class:Welcome
 getPassword	app/src/main/java/EduSys/com/Login.java	/^    public String getPassword() {$/;"	m	class:Login
+getPassword	app/src/main/java/EduSys/com/StudentInfo.java	/^    public String getPassword() { return password; }$/;"	m	class:StudentInfo
+getStartFrom	app/src/main/java/EduSys/com/CourseInfo.java	/^  public String getStartFrom() {$/;"	m	class:CourseInfo
+getStudentBirthday	app/src/main/java/EduSys/com/EditUser.java	/^    public String getStudentBirthday() {$/;"	m	class:EditUser
+getStudentID	app/src/main/java/EduSys/com/EditUser.java	/^    public String getStudentID() {$/;"	m	class:EditUser
+getStudentId	app/src/main/java/EduSys/com/UserScreen.java	/^  public int getStudentId() {$/;"	m	class:UserScreen
+getStudentName	app/src/main/java/EduSys/com/EditUser.java	/^    public String getStudentName() {$/;"	m	class:EditUser
+getStudentPassword	app/src/main/java/EduSys/com/EditUser.java	/^    public String getStudentPassword() {$/;"	m	class:EditUser
 getUsername	app/src/main/java/EduSys/com/Login.java	/^    public String getUsername() {$/;"	m	class:Login
 input	app/src/main/java/EduSys/com/Login.java	/^    public static Scanner input = new Scanner(System.in);$/;"	f	class:Login
+input	app/src/main/java/EduSys/com/UserScreen.java	/^  public static Scanner input = new Scanner(System.in);$/;"	f	class:UserScreen
 input	app/src/main/java/EduSys/com/Welcome.java	/^   public static Scanner input = new Scanner(System.in);$/;"	f	class:Welcome
+lecturer	app/src/main/java/EduSys/com/CourseInfo.java	/^  private String lecturer;$/;"	f	class:CourseInfo
 loginScreen	app/src/main/java/EduSys/com/Login.java	/^    public void loginScreen() throws Exception {$/;"	m	class:Login
 main	app/src/main/java/EduSys/app/App.java	/^    public static void main(String args[]) {$/;"	m	class:App
+main	app/src/test/java/EduSys/com/Test_CancelCourse.java	/^    public static void main(String[] args){$/;"	m	class:Test_CancelCourse
+main	app/src/test/java/EduSys/com/Test_Edit_UserInfo.java	/^    public static void main(String[] args){$/;"	m	class:Test_Edit_UserInfo
+main	app/src/test/java/EduSys/com/Test_EnrolCourse.java	/^    public static void main(String[] args){$/;"	m	class:Test_EnrolCourse
+main	app/src/test/java/EduSys/com/Test_FindCourse.java	/^    public static void main(String[] args){$/;"	m	class:Test_FindCourse
+main	app/src/test/java/EduSys/com/Test_ShowAvailableCourses.java	/^    public static void main(String[] args){$/;"	m	class:Test_ShowAvailableCourses
+main	app/src/test/java/EduSys/com/Test_ShowCourseInfo.java	/^    public static void main(String[] args){$/;"	m	class:Test_ShowCourseInfo
+main	app/src/test/java/EduSys/com/Test_ShowEnrolledCourses.java	/^    public static void main(String[] args){$/;"	m	class:Test_ShowEnrolledCourses
+main	app/src/test/java/EduSys/com/Test_User_Info.java	/^    public static void main (String[] args){$/;"	m	class:Test_User_Info
+mainEnd	app/build/scripts/app.bat	/^:mainEnd$/;"	l
 mainEnd	gradlew.bat	/^:mainEnd$/;"	l
+name	app/src/main/java/EduSys/com/CourseInfo.java	/^  private String name;$/;"	f	class:CourseInfo
+name	app/src/main/java/EduSys/com/StudentInfo.java	/^    private String name;$/;"	f	class:StudentInfo
+omega	app/build/scripts/app.bat	/^:omega$/;"	l
 omega	gradlew.bat	/^:omega$/;"	l
 option	app/src/main/java/EduSys/com/Welcome.java	/^   private String option;$/;"	f	class:Welcome
 optionArr	app/src/main/java/EduSys/com/Welcome.java	/^   private String[] optionArr = {"1", "2", "3", "0"};$/;"	f	class:Welcome
 password	app/src/main/java/EduSys/com/Login.java	/^    private String password = new String();$/;"	f	class:Login
+password	app/src/main/java/EduSys/com/StudentInfo.java	/^    private String password;$/;"	f	class:StudentInfo
+save	app/build/scripts/app	/^save () {$/;"	f
 save	gradlew	/^save () {$/;"	f
+saveInfo	app/src/main/java/EduSys/com/EditUser.java	/^    public void saveInfo() throws Exception {$/;"	m	class:EditUser
+scanInfo	app/src/main/java/EduSys/com/EditUser.java	/^    public void scanInfo() throws Exception {$/;"	m	class:EditUser
+setBirthday	app/src/main/java/EduSys/com/StudentInfo.java	/^    public void setBirthday(String birthday) { this.birthday = birthday; }$/;"	m	class:StudentInfo
+setDescription	app/src/main/java/EduSys/com/CourseInfo.java	/^  public void setDescription(String description) {$/;"	m	class:CourseInfo
+setEndAfter	app/src/main/java/EduSys/com/CourseInfo.java	/^  public void setEndAfter(String endAfter) {$/;"	m	class:CourseInfo
+setEnrolBegin	app/src/main/java/EduSys/com/CourseInfo.java	/^  public void setEnrolBegin(String enrolBegin) {$/;"	m	class:CourseInfo
+setEnrolEnd	app/src/main/java/EduSys/com/CourseInfo.java	/^  public void setEnrolEnd(String enrolEnd) {$/;"	m	class:CourseInfo
+setId	app/src/main/java/EduSys/com/CourseInfo.java	/^  public void setId(int id) {$/;"	m	class:CourseInfo
+setId	app/src/main/java/EduSys/com/StudentInfo.java	/^    public void setId(int id) { this.studentId = id; }$/;"	m	class:StudentInfo
+setLecturer	app/src/main/java/EduSys/com/CourseInfo.java	/^  public void setLecturer(String lecturer) {$/;"	m	class:CourseInfo
+setName	app/src/main/java/EduSys/com/CourseInfo.java	/^  public void setName(String name) {$/;"	m	class:CourseInfo
+setName	app/src/main/java/EduSys/com/StudentInfo.java	/^    public void setName(String name) { this.name = name; }$/;"	m	class:StudentInfo
 setPassword	app/src/main/java/EduSys/com/Login.java	/^    public void setPassword(String password) {$/;"	m	class:Login
+setPassword	app/src/main/java/EduSys/com/StudentInfo.java	/^    public void setPassword(String pass) { this.password = pass; }$/;"	m	class:StudentInfo
+setStartFrom	app/src/main/java/EduSys/com/CourseInfo.java	/^  public void setStartFrom(String startFrom) {$/;"	m	class:CourseInfo
+setStudentBirthday	app/src/main/java/EduSys/com/EditUser.java	/^    public void setStudentBirthday(String studentBirthday) {$/;"	m	class:EditUser
+setStudentID	app/src/main/java/EduSys/com/EditUser.java	/^    public void setStudentID(String studentID) {$/;"	m	class:EditUser
+setStudentId	app/src/main/java/EduSys/com/UserScreen.java	/^  public void setStudentId(int studentId) {$/;"	m	class:UserScreen
+setStudentName	app/src/main/java/EduSys/com/EditUser.java	/^    public void setStudentName(String studentName) {$/;"	m	class:EditUser
+setStudentPassword	app/src/main/java/EduSys/com/EditUser.java	/^    public void setStudentPassword(String studentPassword) {$/;"	m	class:EditUser
 setUsername	app/src/main/java/EduSys/com/Login.java	/^    public void setUsername(String username) {$/;"	m	class:Login
+showAvailableCourses	app/src/main/java/EduSys/com/ShowAvailableCourses.java	/^    public void showAvailableCourses() throws Exception {$/;"	m	class:ShowAvailableCourses
+showEnrolledCourses	app/src/main/java/EduSys/com/ShowEnrolledCourses.java	/^    public void showEnrolledCourses() throws Exception {$/;"	m	class:ShowEnrolledCourses
+startFrom	app/src/main/java/EduSys/com/CourseInfo.java	/^  private String startFrom;$/;"	f	class:CourseInfo
+studentBirthday	app/src/main/java/EduSys/com/EditUser.java	/^    private String studentBirthday;$/;"	f	class:EditUser
+studentID	app/src/main/java/EduSys/com/EditUser.java	/^    private String studentID;$/;"	f	class:EditUser
+studentId	app/src/main/java/EduSys/com/StudentInfo.java	/^    private int studentId;$/;"	f	class:StudentInfo
+studentId	app/src/main/java/EduSys/com/UserScreen.java	/^  private int studentId;$/;"	f	class:UserScreen
+studentName	app/src/main/java/EduSys/com/EditUser.java	/^    private String studentName;$/;"	f	class:EditUser
+studentPassword	app/src/main/java/EduSys/com/EditUser.java	/^    private String studentPassword;$/;"	f	class:EditUser
+userScreen	app/src/main/java/EduSys/com/UserScreen.java	/^  public void userScreen(int StudentId) throws Exception {$/;"	m	class:UserScreen
 username	app/src/main/java/EduSys/com/Login.java	/^    private String username = new String();$/;"	f	class:Login
+warn	app/build/scripts/app	/^warn () {$/;"	f
 warn	gradlew	/^warn () {$/;"	f
 welcome	app/src/main/java/EduSys/com/Welcome.java	/^   public void welcome() throws Exception$/;"	m	class:Welcome
+writeEnrolledCourse	app/src/main/java/EduSys/com/EnrolCourse.java	/^    public void writeEnrolledCourse(String newCourseId) throws Exception {$/;"	m	class:EnrolCourse
