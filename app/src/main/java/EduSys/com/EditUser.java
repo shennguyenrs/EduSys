@@ -11,7 +11,7 @@ package EduSys.com;
  * @author ericknick
  */
 
-import EduSys.utils.ReadResource;
+import EduSys.utils.GetResource;
 import java.io.*;
 import java.util.Scanner;
 
@@ -46,6 +46,7 @@ public class EditUser {
         if (!studentID.equals(this.constantID)) {
             throw new IllegalArgumentException("The ID can not be changed!");
         }
+
         this.studentID = studentID;
     }
 
@@ -54,6 +55,7 @@ public class EditUser {
         if (studentPassword == null) {
             throw new IllegalArgumentException("The password can not be null!");
         }
+
         this.studentPassword = studentPassword;
     }
 
@@ -72,38 +74,37 @@ public class EditUser {
     public String getStudentPassword() {
         return studentPassword;
     }
+    //public void scanInfo() throws Exception {
+    //GetResource reader = new GetResource();
+    //BufferedReader fileToRead = reader.readResource(fileName);
+    ////Use Scanner class to read the file
+    //Scanner myReader = new Scanner(fileToRead);
 
-    public void scanInfo() throws Exception {
-        ReadResource readResource = new ReadResource();
-        File fileToRead = readResource.getFile(fileName);
-        //Use Scanner class to read the file
-        Scanner myReader = new Scanner(fileToRead);
+    ////The reader uses the delimiter as a whitespace
+    ////for reading the file
+    //myReader.useDelimiter(" ");
+    //String constantID = myReader.next();
+    //this.constantID = constantID;
+    ////System.out.println("The constantID is " + this.constantID);
+    //myReader.close();
+    //}
 
-        //The reader uses the delimiter as a whitespace
-        //for reading the file
-        myReader.useDelimiter(" ");
-        String constantID = myReader.next();
-        this.constantID = constantID;
-        //System.out.println("The constantID is " + this.constantID);
-        myReader.close();
-    }
+    //public void saveInfo() throws Exception {
+    //ReadResource readResource = new ReadResource();
+    //File fileToWrite = readResource.getFile(fileName);
+    //FileWriter writer = new FileWriter(fileToWrite);
+    ////Use BufferedWriter to write the file
+    //BufferedWriter bw = new BufferedWriter(writer);
 
-    public void saveInfo() throws Exception {
-        ReadResource readResource = new ReadResource();
-        File fileToWrite = readResource.getFile(fileName);
-        FileWriter writer = new FileWriter(fileToWrite);
-        //Use BufferedWriter to write the file
-        BufferedWriter bw = new BufferedWriter(writer);
-
-        //Save the new data
-        bw.write(studentID);
-        bw.write("   ");
-        bw.write(studentName);
-        bw.write("   ");
-        bw.write(studentBirthday);
-        bw.write("   ");
-        bw.write(studentPassword);
-        System.out.println("Save information successful!");
-        bw.close();
-    }
+    ////Save the new data
+    //bw.write(studentID);
+    //bw.write("   ");
+    //bw.write(studentName);
+    //bw.write("   ");
+    //bw.write(studentBirthday);
+    //bw.write("   ");
+    //bw.write(studentPassword);
+    //System.out.println("Save information successful!");
+    //bw.close();
+    //}
 }

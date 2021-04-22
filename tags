@@ -38,9 +38,10 @@ EduSys.com	app/src/main/java/EduSys/com/StudentInfo.java	/^package EduSys.com;$/
 EduSys.com	app/src/main/java/EduSys/com/UserInfo.java	/^package EduSys.com;$/;"	p
 EduSys.com	app/src/main/java/EduSys/com/UserScreen.java	/^package EduSys.com;$/;"	p
 EduSys.com	app/src/main/java/EduSys/com/Welcome.java	/^package EduSys.com;$/;"	p
-EduSys.utils	app/src/main/java/EduSys/utils/ReadResource.java	/^package EduSys.utils;$/;"	p
+EduSys.utils	app/src/main/java/EduSys/utils/GetResource.java	/^package EduSys.utils;$/;"	p
 EnrolCourse	app/src/main/java/EduSys/com/EnrolCourse.java	/^public class EnrolCourse {$/;"	c
 FindCourse	app/src/main/java/EduSys/com/FindCourse.java	/^public class FindCourse {$/;"	c
+GetResource	app/src/main/java/EduSys/utils/GetResource.java	/^public class GetResource {$/;"	c
 JAVA_EXE	app/build/scripts/app.bat	/^set JAVA_EXE=%JAVA_HOME%\/bin\/java.exe$/;"	v
 JAVA_EXE	app/build/scripts/app.bat	/^set JAVA_EXE=java.exe$/;"	v
 JAVA_EXE	gradlew.bat	/^set JAVA_EXE=%JAVA_HOME%\/bin\/java.exe$/;"	v
@@ -49,7 +50,6 @@ JAVA_HOME	app/build/scripts/app.bat	/^set JAVA_HOME=%JAVA_HOME:"=%$/;"	v
 JAVA_HOME	gradlew.bat	/^set JAVA_HOME=%JAVA_HOME:"=%$/;"	v
 Login	app/src/main/java/EduSys/com/Login.java	/^public class Login {$/;"	c
 PrintUserInfo	app/src/main/java/EduSys/com/UserInfo.java	/^    public void PrintUserInfo() throws Exception {$/;"	m	class:UserInfo
-ReadResource	app/src/main/java/EduSys/utils/ReadResource.java	/^public class ReadResource {$/;"	c
 ShowAvailableCourses	app/src/main/java/EduSys/com/ShowAvailableCourses.java	/^public class ShowAvailableCourses {$/;"	c
 ShowCourseInfo	app/src/main/java/EduSys/com/ShowCourseInfo.java	/^    public void ShowCourseInfo(String compareId) throws Exception{$/;"	m	class:ShowCourseInfo
 ShowCourseInfo	app/src/main/java/EduSys/com/ShowCourseInfo.java	/^public class ShowCourseInfo {$/;"	c
@@ -66,7 +66,7 @@ Test_ShowEnrolledCourses	app/src/test/java/EduSys/com/Test_ShowEnrolledCourses.j
 Test_User_Info	app/src/test/java/EduSys/com/Test_User_Info.java	/^public class Test_User_Info {$/;"	c
 UserInfo	app/src/main/java/EduSys/com/UserInfo.java	/^public class UserInfo {$/;"	c
 UserScreen	app/src/main/java/EduSys/com/UserScreen.java	/^public class UserScreen {$/;"	c
-Welcome	app/src/main/java/EduSys/com/Welcome.java	/^public class Welcome$/;"	c
+Welcome	app/src/main/java/EduSys/com/Welcome.java	/^public class Welcome {$/;"	c
 app.src.main.java.EduSys.com	app/src/main/java/EduSys/com/FindCourse.java	/^package app.src.main.java.EduSys.com;$/;"	p
 app.src.main.java.EduSys.com	app/src/main/java/EduSys/com/ShowCourseInfo.java	/^package app.src.main.java.EduSys.com;$/;"	p
 app.src.test.java.EduSys.app	app/src/test/java/EduSys/com/Test_CancelCourse.java	/^package app.src.test.java.EduSys.app;$/;"	p
@@ -114,7 +114,7 @@ fileName	app/src/main/java/EduSys/com/UserInfo.java	/^    private static final S
 fileName2	app/src/main/java/EduSys/com/CancelCourse.java	/^  private static final String fileName2 = "txt\/CoursesList.txt";$/;"	f	class:CancelCourse
 fileName2	app/src/main/java/EduSys/com/EnrolCourse.java	/^    private static final String fileName2 = "txt\/CoursesList.txt";$/;"	f	class:EnrolCourse
 fileName2	app/src/main/java/EduSys/com/ShowEnrolledCourses.java	/^    private static final String fileName2 = "txt\/UserInfo_test.txt";$/;"	f	class:ShowEnrolledCourses
-filename	app/src/main/java/EduSys/com/Welcome.java	/^   private static final String filename = "txt\/banner.txt";$/;"	f	class:Welcome
+filename	app/src/main/java/EduSys/com/Welcome.java	/^    private static final String filename = "txt\/banner.txt";$/;"	f	class:Welcome
 findCourse	app/src/main/java/EduSys/com/FindCourse.java	/^    public void findCourse(String compareId) throws Exception{$/;"	m	class:FindCourse
 findJavaFromJavaHome	app/build/scripts/app.bat	/^:findJavaFromJavaHome$/;"	l
 findJavaFromJavaHome	gradlew.bat	/^:findJavaFromJavaHome$/;"	l
@@ -123,25 +123,24 @@ getDescription	app/src/main/java/EduSys/com/CourseInfo.java	/^  public String ge
 getEndAfter	app/src/main/java/EduSys/com/CourseInfo.java	/^  public String getEndAfter() {$/;"	m	class:CourseInfo
 getEnrolBegin	app/src/main/java/EduSys/com/CourseInfo.java	/^  public String getEnrolBegin() {$/;"	m	class:CourseInfo
 getEnrolEnd	app/src/main/java/EduSys/com/CourseInfo.java	/^  public String getEnrolEnd() {$/;"	m	class:CourseInfo
-getFile	app/src/main/java/EduSys/utils/ReadResource.java	/^  public File getFile(String filename) throws IOException {$/;"	m	class:ReadResource
 getId	app/src/main/java/EduSys/com/CourseInfo.java	/^  public int getId() {$/;"	m	class:CourseInfo
 getId	app/src/main/java/EduSys/com/StudentInfo.java	/^    public int getId() { return studentId; }$/;"	m	class:StudentInfo
 getLecturer	app/src/main/java/EduSys/com/CourseInfo.java	/^  public String getLecturer() {$/;"	m	class:CourseInfo
 getName	app/src/main/java/EduSys/com/CourseInfo.java	/^  public String getName() {$/;"	m	class:CourseInfo
 getName	app/src/main/java/EduSys/com/StudentInfo.java	/^    public String getName() { return name; }$/;"	m	class:StudentInfo
-getOption	app/src/main/java/EduSys/com/Welcome.java	/^   public String getOption() {$/;"	m	class:Welcome
+getOption	app/src/main/java/EduSys/com/Welcome.java	/^    public String getOption() {$/;"	m	class:Welcome
 getPassword	app/src/main/java/EduSys/com/Login.java	/^    public String getPassword() {$/;"	m	class:Login
 getPassword	app/src/main/java/EduSys/com/StudentInfo.java	/^    public String getPassword() { return password; }$/;"	m	class:StudentInfo
 getStartFrom	app/src/main/java/EduSys/com/CourseInfo.java	/^  public String getStartFrom() {$/;"	m	class:CourseInfo
 getStudentBirthday	app/src/main/java/EduSys/com/EditUser.java	/^    public String getStudentBirthday() {$/;"	m	class:EditUser
 getStudentID	app/src/main/java/EduSys/com/EditUser.java	/^    public String getStudentID() {$/;"	m	class:EditUser
-getStudentId	app/src/main/java/EduSys/com/UserScreen.java	/^  public int getStudentId() {$/;"	m	class:UserScreen
+getStudentId	app/src/main/java/EduSys/com/UserScreen.java	/^    public int getStudentId() {$/;"	m	class:UserScreen
 getStudentName	app/src/main/java/EduSys/com/EditUser.java	/^    public String getStudentName() {$/;"	m	class:EditUser
 getStudentPassword	app/src/main/java/EduSys/com/EditUser.java	/^    public String getStudentPassword() {$/;"	m	class:EditUser
 getUsername	app/src/main/java/EduSys/com/Login.java	/^    public String getUsername() {$/;"	m	class:Login
 input	app/src/main/java/EduSys/com/Login.java	/^    public static Scanner input = new Scanner(System.in);$/;"	f	class:Login
-input	app/src/main/java/EduSys/com/UserScreen.java	/^  public static Scanner input = new Scanner(System.in);$/;"	f	class:UserScreen
-input	app/src/main/java/EduSys/com/Welcome.java	/^   public static Scanner input = new Scanner(System.in);$/;"	f	class:Welcome
+input	app/src/main/java/EduSys/com/UserScreen.java	/^    public static Scanner input = new Scanner(System.in);$/;"	f	class:UserScreen
+input	app/src/main/java/EduSys/com/Welcome.java	/^    public static Scanner input = new Scanner(System.in);$/;"	f	class:Welcome
 lecturer	app/src/main/java/EduSys/com/CourseInfo.java	/^  private String lecturer;$/;"	f	class:CourseInfo
 loginScreen	app/src/main/java/EduSys/com/Login.java	/^    public void loginScreen() throws Exception {$/;"	m	class:Login
 main	app/src/main/java/EduSys/app/App.java	/^    public static void main(String args[]) {$/;"	m	class:App
@@ -159,10 +158,11 @@ name	app/src/main/java/EduSys/com/CourseInfo.java	/^  private String name;$/;"	f
 name	app/src/main/java/EduSys/com/StudentInfo.java	/^    private String name;$/;"	f	class:StudentInfo
 omega	app/build/scripts/app.bat	/^:omega$/;"	l
 omega	gradlew.bat	/^:omega$/;"	l
-option	app/src/main/java/EduSys/com/Welcome.java	/^   private String option;$/;"	f	class:Welcome
-optionArr	app/src/main/java/EduSys/com/Welcome.java	/^   private String[] optionArr = {"1", "2", "3", "0"};$/;"	f	class:Welcome
+option	app/src/main/java/EduSys/com/Welcome.java	/^    private String option;$/;"	f	class:Welcome
+optionArr	app/src/main/java/EduSys/com/Welcome.java	/^    private String[] optionArr = { "1", "2", "3", "0" };$/;"	f	class:Welcome
 password	app/src/main/java/EduSys/com/Login.java	/^    private String password = new String();$/;"	f	class:Login
 password	app/src/main/java/EduSys/com/StudentInfo.java	/^    private String password;$/;"	f	class:StudentInfo
+readResource	app/src/main/java/EduSys/utils/GetResource.java	/^    public BufferedReader readResource(String filename)$/;"	m	class:GetResource
 save	app/build/scripts/app	/^save () {$/;"	f
 save	gradlew	/^save () {$/;"	f
 saveInfo	app/src/main/java/EduSys/com/EditUser.java	/^    public void saveInfo() throws Exception {$/;"	m	class:EditUser
@@ -182,7 +182,7 @@ setPassword	app/src/main/java/EduSys/com/StudentInfo.java	/^    public void setP
 setStartFrom	app/src/main/java/EduSys/com/CourseInfo.java	/^  public void setStartFrom(String startFrom) {$/;"	m	class:CourseInfo
 setStudentBirthday	app/src/main/java/EduSys/com/EditUser.java	/^    public void setStudentBirthday(String studentBirthday) {$/;"	m	class:EditUser
 setStudentID	app/src/main/java/EduSys/com/EditUser.java	/^    public void setStudentID(String studentID) {$/;"	m	class:EditUser
-setStudentId	app/src/main/java/EduSys/com/UserScreen.java	/^  public void setStudentId(int studentId) {$/;"	m	class:UserScreen
+setStudentId	app/src/main/java/EduSys/com/UserScreen.java	/^    public void setStudentId(int studentId) {$/;"	m	class:UserScreen
 setStudentName	app/src/main/java/EduSys/com/EditUser.java	/^    public void setStudentName(String studentName) {$/;"	m	class:EditUser
 setStudentPassword	app/src/main/java/EduSys/com/EditUser.java	/^    public void setStudentPassword(String studentPassword) {$/;"	m	class:EditUser
 setUsername	app/src/main/java/EduSys/com/Login.java	/^    public void setUsername(String username) {$/;"	m	class:Login
@@ -192,12 +192,12 @@ startFrom	app/src/main/java/EduSys/com/CourseInfo.java	/^  private String startF
 studentBirthday	app/src/main/java/EduSys/com/EditUser.java	/^    private String studentBirthday;$/;"	f	class:EditUser
 studentID	app/src/main/java/EduSys/com/EditUser.java	/^    private String studentID;$/;"	f	class:EditUser
 studentId	app/src/main/java/EduSys/com/StudentInfo.java	/^    private int studentId;$/;"	f	class:StudentInfo
-studentId	app/src/main/java/EduSys/com/UserScreen.java	/^  private int studentId;$/;"	f	class:UserScreen
+studentId	app/src/main/java/EduSys/com/UserScreen.java	/^    private int studentId;$/;"	f	class:UserScreen
 studentName	app/src/main/java/EduSys/com/EditUser.java	/^    private String studentName;$/;"	f	class:EditUser
 studentPassword	app/src/main/java/EduSys/com/EditUser.java	/^    private String studentPassword;$/;"	f	class:EditUser
-userScreen	app/src/main/java/EduSys/com/UserScreen.java	/^  public void userScreen(int StudentId) throws Exception {$/;"	m	class:UserScreen
+userScreen	app/src/main/java/EduSys/com/UserScreen.java	/^    public void userScreen(int StudentId) throws Exception {$/;"	m	class:UserScreen
 username	app/src/main/java/EduSys/com/Login.java	/^    private String username = new String();$/;"	f	class:Login
 warn	app/build/scripts/app	/^warn () {$/;"	f
 warn	gradlew	/^warn () {$/;"	f
-welcome	app/src/main/java/EduSys/com/Welcome.java	/^   public void welcome() throws Exception$/;"	m	class:Welcome
+welcome	app/src/main/java/EduSys/com/Welcome.java	/^    public void welcome() throws Exception {$/;"	m	class:Welcome
 writeEnrolledCourse	app/src/main/java/EduSys/com/EnrolCourse.java	/^    public void writeEnrolledCourse(String newCourseId) throws Exception {$/;"	m	class:EnrolCourse

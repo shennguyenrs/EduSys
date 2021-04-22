@@ -11,7 +11,7 @@ package EduSys.com;
  * @author ericknick
  */
 
-import EduSys.utils.ReadResource;
+import EduSys.utils.GetResource;
 import java.io.*;
 import java.util.Scanner;
 
@@ -22,10 +22,9 @@ public class ShowEnrolledCourses {
     private static final String fileName2 = "txt/UserInfo_test.txt";
 
     public void showEnrolledCourses() throws Exception {
-        ReadResource readResource = new ReadResource();
-        FileReader fileToRead = new FileReader(readResource.getFile(fileName));
+        GetResource reader = new GetResource();
         //Pass the file as the parameter into BufferedReader class
-        BufferedReader br = new BufferedReader(fileToRead);
+        BufferedReader br = reader.readResource(fileName);
         //Assign the line to a string
         String readString = br.readLine();
 

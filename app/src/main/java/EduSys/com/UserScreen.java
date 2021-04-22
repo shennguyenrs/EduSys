@@ -48,25 +48,25 @@ public class UserScreen {
         switch (option) {
             case "1":
                 UserInfo currentUser = new UserInfo(studentId);
-                currentUser.userInfo();
+                currentUser.printInfo();
                 break;
             case "2":
-                EditUser currentUser = new EditUser(studentId);
-                currentUser.mainEditUser();
+                //EditUser currentUser = new EditUser(studentId);
+                //currentUser.mainEditUser();
                 break;
             case "3":
-                ShowEnrolledCourses currentUser = new ShowEnrolledCourses(
-                    studentId
-                );
-                currentUser.showEnrolledCourses();
+                //ShowEnrolledCourses currentUser = new ShowEnrolledCourses(
+                //studentId
+                //);
+                //currentUser.showEnrolledCourses();
                 break;
             case "4":
-                EnrolCourse currentUser = new EnrolCourse(studentId);
-                currentUser.enrolCourse();
+                //EnrolCourse currentUser = new EnrolCourse(studentId);
+                //currentUser.enrolCourse();
                 break;
             case "5":
-                CancelCourse currentUser = new CancelCourse(studentId);
-                currentUser.cancelCourse();
+                //CancelCourse currentUser = new CancelCourse(studentId);
+                //currentUser.cancelCourse();
                 break;
             case "0":
                 System.out.println("Good bye");

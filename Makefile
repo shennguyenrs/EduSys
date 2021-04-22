@@ -6,7 +6,7 @@ ctags:
 	@echo "-> Done"
 
 dev:
-	@echo "--> Build and run developement application..."
+	@echo "--> Build and run development application..."
 	@if command -v gradle run @> /dev/null; then gradle run; else ./gradlew run; fi
 
 build:

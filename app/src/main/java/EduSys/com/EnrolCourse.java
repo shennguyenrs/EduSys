@@ -10,7 +10,7 @@ package EduSys.com;
  * @author ericknick
  */
 
-import EduSys.utils.ReadResource;
+import EduSys.utils.GetResource;
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -23,13 +23,12 @@ public class EnrolCourse {
     private boolean check;
 
     public void checkEnrolledCourses(String compareId) throws Exception {
-        ReadResource readResource = new ReadResource();
-        FileReader fileToRead = new FileReader(readResource.getFile(fileName));
+        GetResource reader = new GetResource();
 
         //Reuse the method from ShowEnrolledCourses class
         ShowEnrolledCourses checkEnrolled = new ShowEnrolledCourses();
 
-        BufferedReader br = new BufferedReader(fileToRead);
+        BufferedReader br = reader.readResource(fileName);
         String readString = br.readLine();
 
         //Check courseID in the enrolled course list
@@ -47,34 +46,32 @@ public class EnrolCourse {
         }
 
         br.close();
-
         //The courseID is not contained in the enrolled course file
-        if (check == false) {
-            writeEnrolledCourse(compareId);
-        }
+        //if (check == false) {
+        //writeEnrolledCourse(compareId);
+        //}
     }
 
-    public void writeEnrolledCourse(String newCourseId) throws Exception {
-        ReadResource readResource = new ReadResource();
-        FileWriter fileToWrite = new FileWriter(readResource.getFile(fileName));
+    //public void writeEnrolledCourse(String newCourseId) throws Exception {
+    //ReadResource readResource = new ReadResource();
+    //FileWriter fileToWrite = new FileWriter(readResource.getFile(fileName));
 
-        //Pass the file as the parameter into BufferedWriter class
-        BufferedWriter bw = new BufferedWriter(fileToWrite);
-        //bw.newLine();
+    ////Pass the file as the parameter into BufferedWriter class
+    //BufferedWriter bw = new BufferedWriter(fileToWrite);
+    ////bw.newLine();
 
-        //Write the new courseID into the file
-        bw.write(newCourseId);
-        bw.close();
-        System.out.println("You registered into a new course " + newCourseId);
-    }
+    ////Write the new courseID into the file
+    //bw.write(newCourseId);
+    //bw.close();
+    //System.out.println("You registered into a new course " + newCourseId);
+    //}
 
     public void enrolCourse(String compareId) throws Exception {
-        ReadResource readResource = new ReadResource();
-        FileReader fileToRead = new FileReader(readResource.getFile(fileName2));
+        GetResource reader = new GetResource();
 
         ShowAvailableCourses showAvailable = new ShowAvailableCourses();
         //Pass the file as the parameter into BufferedReader class
-        BufferedReader br = new BufferedReader(fileToRead);
+        BufferedReader br = reader.readResource(fileName2);
 
         String readString;
 

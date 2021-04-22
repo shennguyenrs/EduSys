@@ -11,7 +11,7 @@ package EduSys.com;
  * @author ericknick
  */
 
-import EduSys.utils.ReadResource;
+import EduSys.utils.GetResource;
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -22,11 +22,10 @@ public class ShowAvailableCourses {
     private static final String fileName = "txt/CoursesList.txt";
 
     public void showAvailableCourses() throws Exception {
-        ReadResource readResource = new ReadResource();
-        FileReader fileToRead = new FileReader(readResource.getFile(fileName));
+        GetResource reader = new GetResource();
 
         //Pass the file as the parameter into BufferedReader class
-        BufferedReader br = new BufferedReader(fileToRead);
+        BufferedReader br = reader.readResource(fileName);
 
         String readString;
 
